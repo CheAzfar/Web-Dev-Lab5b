@@ -1,0 +1,164 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+html,body{
+    height: 100%;
+}
+body{
+    display: grid;
+    place-items: center;
+    background: #dde1e7;
+    text-align: center;
+}
+a,p{
+    color: #595959;
+    font-size: 18px;
+}
+a {
+    text-decoration: underline;
+    color: purple;
+}
+.content{
+    width: 700px;
+    padding: 40px 30px;
+    background: #dde1e7;
+    border-radius: 10px;
+    box-shadow: -3px -3px 7px #ffffff73,
+                2px 2px 5px rgba(94,104,121,0.288);
+}
+.content .text{
+    font-size: 33px;
+    font-weight: 600;
+    margin-bottom: 35px;
+    color: #595959;
+}
+.field {
+display: flex; /* Use flexbox layout */
+align-items: center; /* Align items vertically in the center */
+justify-content: space-between; /* Space out label and input */
+margin-bottom: 20px; /* Add spacing between fields */
+}
+.field input, 
+.field select {
+width: 65%; /* Allow input/select to occupy the rest of the space */
+padding: 10px;
+outline: none;
+border: none;
+font-size: 18px;
+background: #dde1e7;
+color: #595959;
+border-radius: 10px;
+box-shadow: inset 2px 2px 5px #BABECC,
+    inset -5px -5px 10px #ffffff73;
+}
+
+.field input:focus{
+box-shadow: inset 1px 1px 2px #BABECC,
+            inset -1px -1px 2px #ffffff73;
+}
+.field label {
+width: 30%; /* Set a fixed width for the label */
+text-align: left; /* Align the text to the left */
+font-size: 16px; /* Adjust font size if needed */
+color: #666666;
+}
+.button{
+    margin: 15px 0;
+    width: 100%;
+    height: 50px;
+    font-size: 18px;
+    line-height: 50px;
+    font-weight: 600;
+    background: #dde1e7;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    color: #595959;
+    box-shadow: 2px 2px 5px #BABECC,
+                -5px -5px 10px #ffffff73;
+}
+button:focus{
+color: #3498db;
+box-shadow: inset 2px 2px 5px #BABECC,
+ inset -5px -5px 10px #ffffff73;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+    background: #dde1e7;
+    border-radius: 10px;
+    box-shadow: -3px -3px 7px #ffffff73, 
+                3px 3px 5px rgba(94, 104, 121, 0.288);
+    margin-top: 20px;
+}
+table th:nth-child(4),
+table td:nth-child(4) {
+    width: 40%; /* Increase the width of the Name column */
+    word-wrap: break-word; /* Wrap text within the column */
+}
+
+th, td {
+    padding: 15px;
+    width: 30%;
+    word-break: break-word;
+    text-align: left;
+    font-size: 16px;
+    color: #595959;
+}
+
+th {
+    background: #dde1e7;
+    font-weight: 600;
+    box-shadow: inset 2px 2px 5px #BABECC,
+                inset -5px -5px 10px #ffffff73;
+    border-bottom: 2px solid #BABECC;
+}
+
+td {
+    background: #dde1e7;
+    box-shadow: inset 2px 2px 5px #BABECC,
+                inset -5px -5px 10px #ffffff73;
+    border-bottom: 1px solid #BABECC;
+}
+table, th, td {
+    border: none; /* Remove default border */
+}
+.content table {
+    margin: auto;
+}
+
+.action-links {
+    display: flex; /* Align items horizontally */
+    gap: 10px; /* Add spacing between links */
+    justify-content: center; /* Center the links horizontally */
+    align-items: center; /* Align items vertically */
+}
+
+.action-links a {
+    padding: 8px 12px; /* Adjust padding for better alignment */
+    font-size: 14px;
+    text-decoration: none;
+    background: #dde1e7;
+    border-radius: 8px;
+    box-shadow: -2px -2px 5px #ffffff73, 
+                2px 2px 5px rgba(94, 104, 121, 0.288);
+    transition: all 0.3s ease;
+}
+
+.action-links a:hover {
+    color: #3498db;
+    background: #e4e8ee;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1), 
+                -2px -2px 5px rgba(255, 255, 255, 0.7);
+}
+
+
+.action-links a.delete {
+    color: #e74c3c; /* Red color for Delete link */
+}
